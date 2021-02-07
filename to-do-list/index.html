@@ -16,10 +16,22 @@
         <h1>Nikita's Todo List</h1>
     </header>
     <form>
-        <input type="text" class="todo-input">
+        <input type="text" id="text" class="todo-input">
         <button class="todo-button" type="submit">
             <i class="fas fa-plus-square"></i>
         </button>
+        <div class="select">
+            <select name="todos" id="selecter" class="filter-todo">
+                <option class="filter-item" value="all">All</option>
+                <option class="filter-item" value="completed">Completed</option>
+                <option class="filter-item" value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+
+        <button class="search-button">
+            <i class="fas fa-search"></i>
+        </button>
+
     </form>
     <div class="todo-container">
         <ul class="todo-list">
